@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Rose';
+}
+
+body {
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    width: 6em;
+}
+
+.menu .bi-list {
+    color: #fff;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.menu .bi-list:hover{
+    color: #ff505f;
+}
+
+.toggle-element {
+    display: none;
+}
+
+.nav-container {
+    padding-top: 1em;
+    margin-inline: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.background-image {
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.background-image::after{
+    content: '';
+    color: white;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(40,41,55, 0.6);
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.background-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.list {
+    text-align: left;
+}
+
+.list-item {
+    padding: .5em;
+    background-color: rgba(0,0,0,.5);
+    cursor: pointer;
+}
+
+.primary-navigation {
+    margin-top: 1em;
+    flex: 100%;
+    transition: all 5s;
+}
+
+.list-item:hover{
+    background-color: rgba(0,0,0,1);
+}
+
+.list-item a {
+    text-decoration: none;
+    color: #ffc233;
+}
+
+.cta-btn {
+    background-color: #ff505f;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #fff;
+    padding: .2em 1em;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+button[data-type="inverse"] {
+    padding: .5em 1em;
+}
+
+.cta-btn:hover {
+    background-color: #fb3a4a;
+}
+
+.hero-container {
+    width: 90%;
+    height: 25em;
+    margin-inline: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container h1 {
+    color: #ffc233;
+    font-size: 2.2em;
+    line-height: 1em;
+    margin-bottom: 1em;
+}
+
+.scroll-container {
+    text-align: end;
+}
+
+.scroll {
+    width: 6em;
+}
+
+
+
+@media (min-width: 50em) {
+    .menu {
+        display: none;
+    }
+
+    .toggle-element {
+        display: contents;
+    }
+
+    .list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button[data-type="primary"] {
+        width: inherit;
+        padding: .5em 1.5em;
+    }
+
+    .list-item {
+        background-color: unset;
+        padding-inline: 1.8em;
+    }
+
+    .scroll-container {
+        text-align: end;
+        margin-top: 8em;
+        width: 90%;
+        margin-inline: auto;
+    }
+    
+    .scroll {
+        width: 8em;
+    }
+
+    button[data-type="inverse"] {
+        padding: 1em 5em;
+        width: unset;
+    }
+}
+
+@media (min-width: 70em) {
+
+    .hero-container h1 {
+        font-size: 6em;
+        width: 65%;
+        margin-top: 2em;
+        margin-bottom: .5em;
+    }
+}

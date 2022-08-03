@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Red Rose Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Dela Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Project 2</title>
+</head>
+<body>
+    <div class="background-image">
+        <img src="assets/bg.jpg" alt="">
+    </div>
+    <header>
+        <div class="nav-container">
+            <img class="logo" src="assets/white-logo.png" alt="Logo">
+            <div id="menu-btn" class="menu">
+                <i class="bi bi-list"></i>
+            </div>
+            <nav class="primary-navigation toggle-element">
+                <ul class="list">
+                    <li class="list-item"><a href="#">Our Menu</a></li>
+                    <li class="list-item"><a href="#">Maps</a></li>
+                    <li class="list-item"><a href="#">About</a></li>
+                    <li class="list-item"><a href="#">Contact</a></li>
+                </ul>
+                <button data-type="primary" class="cta-btn">Order</button>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="hero-container">
+            <h1>A Restuarant That Only Serves Delicious Food.</h1>
+            <button class="cta-btn" data-type="inverse">Read Our Menu</button>
+        </div>
+        <div class="scroll-container">
+            <img class="scroll" src="assets/scroll.png" alt="Scroll Up" class="scroll-img">
+        </div>
+    </section>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        menuBtn.addEventListener('click', () => {
+            document.querySelector('.primary-navigation').classList.toggle('toggle-element')
+        })
+    </script>
+</body>
+</html>
