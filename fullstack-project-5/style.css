@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+.arrow {
+    font-size: small;
+    font-weight: bold;
+    margin-left: .5em;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    min-height: 100%;
+    background-image: url('/assets/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.nav-container {
+    background-color: #000000;
+    box-shadow: 0 0 0 100vmax #000000;
+    clip-path: inset(0 -100vmax);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1em;
+}
+
+.logo {
+    width: 6em;
+}
+
+.header__menu-icon {
+    color: #fff;
+    font-size: 2em;
+}
+
+.hide {
+    display: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.navbar {
+    padding: .5em;
+    flex: 100%;
+}
+
+.list-item {
+    color: #fff;
+    padding: .2em;
+}
+
+.button-small, .button-large {
+    background-color: #ba0cc5;
+    border: none;
+    color: #fff;
+    padding: .5em 1em;
+    border-radius: 3px;
+}
+
+.button-large {
+    font-size: 1.2em;
+    padding: .8em 2em;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.hero {
+    text-align: center;
+    color: #fff;
+    min-height: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+.hero-heading {
+    font-size: 2.2em;
+    line-height: 1em;
+}
+
+@media (min-width: 55em) {
+    html {
+        min-height: 100%;
+        background-image: url('/assets/bg.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .hide {
+        display: unset;
+    }
+
+    .header__menu-icon {
+        display: none;
+    }
+
+    .navbar {
+        flex: unset;
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .line {
+        width: 1px;
+        height: 2em;
+        background-color: #fff;
+    }
+    
+    .list {
+        width: 80%;
+        display: flex;
+        align-items: center;
+    }
+
+    .list-item {
+        padding-inline: 1em;
+    }
+
+    .hero {
+        margin-top: 8em;
+        width: 60%;
+        margin-inline: auto;
+        height: 15em;
+    }
+
+    .hero-heading {
+        font-size: 3.5em;
+    }
+
+    .hero-description {
+        font-size: 1em;
+    }
+}
