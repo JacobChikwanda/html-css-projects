@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Allerta';
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+
+#navbarMonstera {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1em;
+    margin-top: 1em;
+}
+
+#navFirst {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+#navMid {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+#navMid h4 {
+    font-size: 1.5em;
+    padding: .2em;
+}
+
+#navMid h4:hover {
+    background-color: rgba(13, 46, 25, .8);
+    color: #fff;
+}
+
+#navEnd {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+#navEnd img {
+    width: 2em;
+}
+
+/* Mid Section */
+
+
+
+#midWholePart1 {
+    margin-block: 1em;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1em;
+}
+
+#midWholePart11 {
+    text-align: left;
+}
+
+#monstera {
+    font-size: 3.5em;
+}
+
+#imgMain {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+#midWholePart121 {
+    display: flex;
+    justify-content: center;
+}
+
+#midWholePart121 h1 {
+    background-color: #466d50;
+    color: #fff;
+    padding: .3em 1em;
+    border-radius: 50px;
+    position: relative;
+    margin-block: 1.5em;
+}
+
+#midWholePart121 h1::after {
+    content: '>';
+    position: relative;
+    top: -.1em;
+    left: .1em;
+}
+
+#midWholePart13 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.midWholePart13Parts {
+    display: flex;
+}
+
+.midWholePart13Parts img {
+    width: 4em;
+}
+
+@media(min-width: 50em) {
+    #navbarMonstera {
+        all: unset;
+        padding-inline: 1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1em;
+    }
+
+    #navMid h4 {
+        font-size: 1em;
+        padding: .2em;
+    }
+
+    #navEnd img {
+        width: 1.2em;
+    }
+
+    #midWholePart1 {
+        margin-top: 8em;
+    }
+
+    #midWholePart121 {
+        justify-content: start;
+        margin-bottom: 4em;
+    }
+
+    #imgMain {
+        width: 25em;
+        right: 0;
+        bottom: 0em;
+    }
+
+    #monstera {
+        font-size: 5em;
+    }
+
+    #midWholePart13 {
+        width: 70%;
+        display: flex;
+    }
+
+    .midWholePart13Parts {
+        width: 30%;
+    }
+
+    .text {
+        font-size: .8em;
+    }
+
+    .midWholePart13Parts img {
+        width: 3.5em;
+    }
+}
