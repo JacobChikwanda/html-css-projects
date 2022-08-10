@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container {
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#menu-btn {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.navigation {
+    flex: 100%;
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
+}
+
+.nav-item {
+    padding: .5em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.active-item {
+    color: #fe8e71;
+}
+
+.icons {
+    text-align: center;
+}
+
+/* Left Section */
+.left-section {
+    text-align: center;
+}
+.left-section h3 {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.left-section h3 img {
+    width: 1.2em;
+}
+
+.left-section h1 {
+    font-family: 'Fredoka One';
+    font-size: 2.5em;
+    margin-block: .5em;
+}
+
+.sub-headline {
+    font-size: 1em;
+}
+
+.text {
+    font-size: .8em;
+    margin-bottom: 1em;
+}
+
+.sub-headlines {
+    margin-bottom: 1em;
+}
+
+.action-btns {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-inline: auto;
+    margin-bottom: 1em;
+}
+
+.action-btn {
+    padding: 1em 2em;
+    background-color: #fe5e35;
+    color: #fff;
+    border: none;
+    border-radius: 5em;
+}
+
+/* Right Section */
+.headphone-div {
+    position: relative;
+    height: 20em;
+    margin-bottom: 1em;
+}
+
+#discount {
+    width: 6em;
+    position: absolute;
+    bottom: 2em;
+    left: 2.5em;
+}
+
+.discount-content {
+    font-size: .8em;
+    position: absolute;
+    bottom: 3.5em;
+    left: 5em;
+}
+
+#headphone {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    margin-inline: auto;
+    margin-bottom: 1em;
+}
+
+.dot {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.yellow-dot {
+    background-color: #fbd104;
+}
+
+.tomato-dot {
+    background-color: #fe5e35;
+}
+
+.bottom-btn {
+    text-align: center;
+}
+
+@media (max-width:412px) {
+    .headphone-div {
+        height: 22em;
+    }
+}
+
+@media (min-width: 45em) {
+    .hide {
+        all: unset;
+    }
+
+    #menu-btn {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+    }
+
+    .nav-items {
+        display: flex;
+    }
+
+    .nav-item {
+        padding-inline: 2em;
+    }
+
+    .intro-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .left-section, .right-section {
+        flex: 50%;
+        text-align: left;
+        min-height: 30em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-section {
+        flex: 50%;
+    }
+
+    .left-section h3 {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    .left-section h1 {
+        font-size: 4em;
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+    .sub-headlines {
+        position: relative;
+        margin-left: 3em;
+    }
+
+    .sub-headline::before {
+        content: '';
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        position: absolute;
+        left: -.2em;
+        z-index: -1;
+        background-color: #fe5e35;
+    }
+
+    .sub-headline img {
+        margin-right: 1em;
+        position: relative;
+        top: .2em;
+        left: .1em;
+    }
+
+    .sub-headline {
+        font-size: 1.3em;
+        font-weight: lighter;
+        margin-bottom: 1em;
+    }
+
+    .text {
+        color: rgba(0,0,0,.5);
+    }
+
+    .discount-content {
+        margin-left: 12.5em;
+        color: white;
+        top: 19.5em;
+    }
+
+    #discount {
+        margin-left: 10em;
+        top: 14em;
+    }
+
+    #headphone {
+        width: 55%;
+        margin-left: 10em;
+    }
+
+    .dots {
+        margin-top: 4em;
+        margin-bottom: 3em;
+    }
+
+    .action-btns {
+        width: 50%;
+    }
+}
