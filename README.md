@@ -1,5 +1,11 @@
 # 15 HTML & CSS Projects
 
+![ineuro, lco](https://img.shields.io/badge/iNeuron-LCO-green)
+![hitesh choudhary](https://img.shields.io/badge/Hitesh--Choudhary-Full--stack--JS--bootcamp-purple)
+
+![HTML & CSS](https://img.shields.io/badge/HTML-CSS-orange)
+![Live class](https://img.shields.io/badge/LIVE--CLASS-PROJECT--10-green)
+
 ## About This Repo
 
 In this repository you will find 15 projects that I have built while undertaking a fullstack JavaScript bootcamp with Hitesh Choudary.
