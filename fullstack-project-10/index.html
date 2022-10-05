@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="overlay">    
+    </div>
+    <nav>
+      <div class="showMenu">
+        <img src="./images/white-logo.png" id="logo" alt="">
+        <i class="bi bi-list menuBtn"></i>
+      </div>
+      <ul class="hide-list list">
+        <li class="list-item">About Us</li>
+        <li class="list-item">Benifits</li>
+        <li class="list-item">Projects</li>
+        <li class="list-item">Stages</li>
+        <li class="list-item">Services</li>
+        <li class="list-item">
+          <div class="call-container">
+            <p>Call Us</p>
+            <p>+31 (097) 654 54 34</p>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="upper-block">
+        <h1>Interior Design That Care <br class="break" /> About Details</h1>
+        <div class="deco">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="./images/bulb.jpg" class="card-image" alt="">
+            </div>
+            <p class="card-text">Innovation ideas, stylish, design for Home & Business</p>
+          </div>
+        </div>
+      </div>
+      <div class="lower-block">
+        <div class="left">
+          <div class="btn">
+            <p class="btn-text">Learn More</p>
+          </div>
+        </div>
+        <div class="deco">
+          <div class="card">
+            <div class="card-img-container">
+              <img src="./images/puzzle.jpg" style="width: 3em;" class="card-image" alt="">
+            </div>
+            <p class="card-text">Innovation ideas, stylish, design for Home & Business</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <div class="main">
+      <div class="main-left">
+        <h1>
+          Interior Design That <br />
+          Care About Details
+        </h1>
+        <button>Learn More</button>
+      </div>
+      <div class="card-section">
+        <p class="card card-light">
+          <span class="icon-span"
+            ><img width="32" src="./images/bulb.jpg" alt="" />
+          </span>
+          <span class="desc"
+            >Innovation ideas, stylish, design for Home & Business</span
+          >
+          <span class="line">
+            <svg
+              width="100"
+              height="30"
+              viewBox="0 0 160 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="145" cy="15" r="15" fill="white" />
+              <path d="M1 15L145 15.5" stroke="white" stroke-width="3" />
+            </svg>
+          </span>
+        </p>
+
+        <p class="card card-puzzle">
+          <span class="icon-span"
+            ><img width="32" src="./images/puzzle.jpg" alt="" />
+          </span>
+          <span class="desc"
+            >We create your space better based on your own idea</span
+          >
+          <span class="line">
+            <svg
+              width="100"
+              height="30"
+              viewBox="0 0 160 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="145" cy="15" r="15" fill="white" />
+              <path d="M1 15L145 15.5" stroke="white" stroke-width="3" />
+            </svg>
+          </span>
+        </p>
+      </div>
+    </div> -->
+
+    <script>
+      document.querySelector('.menuBtn').addEventListener('click', _ => {
+        document.querySelector('.list').classList.toggle('hide-list')
+      })
+    </script>
+
+  </body>
+</html>
