@@ -4,148 +4,171 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Project 13</title>
   </head>
   <body>
-    <div class="container">
-      <section class="navbar">
-        <nav>
-          <div class="nav-logo">
-            <img src="./svg/Logo.png" alt="" />
+    <section class="navbar container">
+      <!-- Navigation -->
+      <nav>
+        <div class="showMenu">
+          <img src="./svg/Logo.png" id="logo" alt="">
+          <i class="bi bi-list menuBtn"></i>
+        </div>
+        <ul class="hide-list list">
+          <li class="list-item active-item">Home</li>
+          <li class="list-item">Services</li>
+          <li class="list-item">Pricing</li>
+          <li class="list-item">Testimonial</li>
+          <li class="list-item">Blog</li>
+          <li class="list-item">
+            <div class="button-group">
+              <button class="navbar-btn">Free Trial</button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="home">
+        <div class="home-left">
+          <h1>
+            Codext one of 
+            the base system
+            in SAAS
+          </h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Hic quisquam fuga temporibus quibusdam quo omnis, cum veniam.
+            Praesentium quasi reprehenderit ipsa quam sunt soluta
+            voluptatibus, ea quod, vitae sint facilis.
+          </p>
+          <button>Try A Live Demo</button>
+        </div>
+        <div class="home-right">
+          <img src="./svg/top.svg" id='top-img' alt="image missing" />
+        </div>
+      </div>
+    </section>
+
+    <!-- service setion  -->
+
+    <section class="services">
+      <div class="service">
+        <div class="service-left">
+          <img src="./svg/bottom.svg" alt="" />
+        </div>
+        <div class="service-right">
+          <h2>
+            It's helpful for operating
+            system
+          </h2>
+          <div class="service-right-sub">
+            <h3>Ultrafast & secure</h3>
+            <div class="serivce-item">
+              <i class="fa-sharp fa-solid fa-share orange"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Esse neque suscipit
+              </p>
+            </div>
+            <h3>Allow Customization</h3>
+            <div class="serivce-item">
+              <i class="fa-sharp fa-solid fa-share green"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Esse neque suscipit
+              </p>
+            </div>
+            <h3>Smart Contract</h3>
+            <div class="serivce-item">
+              <i class="fa-sharp fa-solid fa-share blue"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Esse neque suscipit
+              </p>
+            </div>
           </div>
-          <div class="list-items">
-            <ul>
-              <li class="list-item">Home</li>
-              <li>Services</li>
-              <li>Pricing</li>
-              <li>Testimonial</li>
-              <li>Blog</li>
-            </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- feture section  -->
+    <section class="feature">
+      <h2 class="feature-heading">
+        We Provide Best Feature
+        for Customer
+      </h2>
+
+      <div class="cards">
+        <div class="card">
+          <div class="web-img">
+            <img src="./svg/web-developing.svg" alt="" />
           </div>
-          <button class="navbar-btn">Free Trial</button>
-        </nav>
-        <div class="home">
-          <div class="home-left">
-            <h1>
-              Codext one of <br />
-              the base system <br />
-              in SAAS
-            </h1>
+
+          <div class="web-info">
+            <h4>Clean Code</h4>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
-              Hic quisquam fuga temporibus quibusdam quo omnis, cum veniam.
-              <br />
-              Praesentium quasi reprehenderit ipsa quam sunt soluta <br />
-              voluptatibus, ea quod, vitae sint facilis.
+              Lorem ipsum dolor sit amet
+              consectetur adipisicing elit.
+              Culpa, molestias!
             </p>
-            <button>Try A Live Demo</button>
-          </div>
-          <div class="home-right">
-            <img src="./svg/30495 [Converted]-01(1).svg" alt="" />
           </div>
         </div>
-      </section>
-
-      <!-- service setion  -->
-
-      <section class="services">
-        <div class="service">
-          <div class="service-left">
-            <img src="./svg/Saas illustration-01.svg" alt="" />
+        <div class="card">
+          <div class="data-img">
+            <img src="./svg/data-analytics.svg"  alt="" />
           </div>
-          <div class="service-right">
-            <h2>
-              It's helpfulfor operating <br />
-              system
-            </h2>
-            <div class="service-right-sub">
-              <h3>Ultrafast & secure</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-                Esse neque suscipit
-              </p>
-              <h3>Allow Customization</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-                Esse neque suscipit
-              </p>
-              <h3>Smart Contract</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-                Esse neque suscipit
-              </p>
-            </div>
+
+          <div class="card-info">
+            <h4>Data Analytics</h4>
+            <p>
+              Lorem ipsum dolor sit amet
+              consectetur adipisicing elit.
+              Culpa, molestias!
+            </p>
           </div>
         </div>
-      </section>
-
-      <!-- feture section  -->
-      <section class="feature">
-        <h2 class="feature-heading">
-          We Provide Best Feature <br />
-          for Customer
-        </h2>
-
-        <div class="cards">
-          <div class="card">
-            <div class="web-img">
-              <img src="./svg/web-developing.svg" alt="" />
-            </div>
-
-            <div class="web-info">
-              <h4>Clean Code</h4>
-              <p>
-                Lorem ipsum dolor sit amet <br />
-                consectetur adipisicing elit. <br />
-                Culpa, molestias!
-              </p>
-            </div>
+        <div class="card">
+          <div class="secure-img">
+            <img src="./svg/secured-profile.svg" alt="" />
           </div>
-          <div class="card">
-            <div class="data-img">
-              <img src="./svg/data-analytics.svg" alt="" />
-            </div>
 
-            <div class="card-info">
-              <h4>Data Analytics</h4>
-              <p>
-                Lorem ipsum dolor sit amet <br />
-                consectetur adipisicing elit. <br />
-                Culpa, molestias!
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="secure-img">
-              <img src="./svg/secured-profile.svg" alt="" />
-            </div>
-
-            <div class="card-info">
-              <h4>Fully Secured</h4>
-              <p>
-                Lorem ipsum dolor sit amet <br />
-                consectetur adipisicing elit. <br />
-                Culpa, molestias!
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="support-img">
-              <img src="./svg/support.svg" alt="" />
-            </div>
-
-            <div class="card-info">
-              <h4>24/7 support</h4>
-              <p>
-                Lorem ipsum dolor sit amet <br />
-                consectetur adipisicing elit. <br />
-                Culpa, molestias!
-              </p>
-            </div>
+          <div class="card-info">
+            <h4>Fully Secured</h4>
+            <p>
+              Lorem ipsum dolor sit amet
+              consectetur adipisicing elit.
+              Culpa, molestias!
+            </p>
           </div>
         </div>
-      </section>
-    </div>
+        <div class="card">
+          <div class="support-img">
+            <img src="./svg/support.svg" alt="" />
+          </div>
+
+          <div class="card-info">
+            <h4>24/7 support</h4>
+            <p>
+              Lorem ipsum dolor sit amet
+              consectetur adipisicing elit.
+              Culpa, molestias!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      document.querySelector('.menuBtn').addEventListener('click', _ => {
+        document.querySelector('.list').classList.toggle('hide-list')
+      })
+    </script>
   </body>
 </html>
